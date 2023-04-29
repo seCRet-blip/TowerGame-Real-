@@ -18,7 +18,7 @@ public class BulletBehaviour : MonoBehaviour {
 		GameObject gm = GameObject.Find("GameManager");
 		gameManager = gm.GetComponent<GameManagerBehaviour>();	
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		transform.position += normalizeDirection * speed * Time.deltaTime; 	

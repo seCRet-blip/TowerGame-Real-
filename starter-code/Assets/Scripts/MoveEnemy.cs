@@ -20,6 +20,7 @@ public class MoveEnemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		Vector3 startPosition = waypoints [currentWaypoint].transform.position;
 		Vector3 endPosition = waypoints [currentWaypoint + 1].transform.position;
 
