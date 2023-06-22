@@ -41,7 +41,7 @@ public class PlaceMonster : MonoBehaviour {
 			monster = (GameObject)Instantiate(monsterPrefab, transform.position, Quaternion.identity);
 
 			AudioSource audioSource = gameObject.GetComponent<AudioSource>();
-			//audioSource.PlayOneShot(audioSource.clip);
+			audioSource.PlayOneShot(audioSource.clip);
 			gameManager.Gold -= monster.GetComponent<MonsterData>().CurrentLevel.cost;
 		}
 		else if (CanUpgradeMonster())
